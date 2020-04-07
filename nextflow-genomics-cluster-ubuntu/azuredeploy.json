@@ -30,14 +30,14 @@
     },
     "vmNodeSku": {
       "type": "string",
-      "defaultValue": "Standard_F8s_v2",
+      "defaultValue": "Standard_B1ls",
       "metadata": {
         "description": "Size of VMs in the VM Scale Set."
       }
     },
     "vmMasterSku": {
       "type": "string",
-      "defaultValue": "Standard_F16s_v2",
+      "defaultValue": "Standard_B1ls",
       "metadata": {
         "description": "Size of the master node."
       }
