@@ -255,6 +255,28 @@
               "sourceAddressPrefix": "*",
               "sourcePortRange": "*",
               "destinationAddressPrefix": "*"
+            },
+           "name": "default-http-80",
+            "properties": {
+              "priority": 1000,
+              "access": "Allow",
+              "direction": "Outbound",
+              "destinationPortRange": "80",
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*"
+            },
+            "name": "default-https-443",
+            "properties": {
+              "priority": 1000,
+              "access": "Allow",
+              "direction": "Outbound",
+              "destinationPortRange": "443",
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*"
             }
           }
         ]
