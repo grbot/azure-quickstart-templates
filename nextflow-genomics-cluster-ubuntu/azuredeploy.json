@@ -381,7 +381,7 @@
         },
         "protectedSettings": {
           "commandToExecute": "bash init.sh",
-          "fileUris": ["https://raw.githubusercontent.com/grbot/azure-quickstart-templates/master/nextflow-genomics-cluster-ubuntu/scripts/init.sh"]
+          "fileUris": "https://raw.githubusercontent.com/grbot/azure-quickstart-templates/master/nextflow-genomics-cluster-ubuntu/scripts/init.sh"
         }
       }
     },
