@@ -146,7 +146,7 @@
       "metadata": {
         "description": "*Advanced* This is best left as default unless you are an advanced user. The base URI where artifacts required by this template are located."
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master"
+      "defaultValue": "https://raw.githubusercontent.com/grbot/azure-quickstart-templates/master"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -247,7 +247,7 @@
           {
             "name": "default-allow-22",
             "properties": {
-              "priority": 1000,
+              "priority": 100,
               "access": "Allow",
               "direction": "Inbound",
               "destinationPortRange": "22",
@@ -255,21 +255,12 @@
               "sourceAddressPrefix": "*",
               "sourcePortRange": "*",
               "destinationAddressPrefix": "*"
-            },
-           "name": "default-http-80",
+            }
+          },
+          {
+            "name": "default-allow-https",
             "properties": {
-              "priority": 1000,
-              "access": "Allow",
-              "direction": "Outbound",
-              "destinationPortRange": "80",
-              "protocol": "Tcp",
-              "sourceAddressPrefix": "*",
-              "sourcePortRange": "*",
-              "destinationAddressPrefix": "*"
-            },
-            "name": "default-https-443",
-            "properties": {
-              "priority": 1000,
+              "priority": 200,
               "access": "Allow",
               "direction": "Outbound",
               "destinationPortRange": "443",
@@ -278,7 +269,20 @@
               "sourcePortRange": "*",
               "destinationAddressPrefix": "*"
             }
-          }
+          },
+          {
+              "name": "default-allow-http",
+              "properties": {
+                "priority": 300,
+                "access": "Allow",
+                "direction": "Outbound",
+                "destinationPortRange": "80",
+                "protocol": "Tcp",
+                "sourceAddressPrefix": "*",
+                "sourcePortRange": "*",
+                "destinationAddressPrefix": "*"
+              }
+           }
         ]
       }
     },
