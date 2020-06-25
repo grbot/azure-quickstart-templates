@@ -146,7 +146,7 @@
       "metadata": {
         "description": "*Advanced* This is best left as default unless you are an advanced user. The base URI where artifacts required by this template are located."
       },
-      "defaultValue": "https://raw.githubusercontent.com/grbot/azure-quickstart-templates/master"
+      "defaultValue": "https://raw.githubusercontent.com/grbot/azure-quickstart-templates/master/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -160,14 +160,14 @@
       "metadata": {
         "description": "*Advanced* This should be left as default unless you are an advanced user. The folder in the artifacts location were shared scripts are stored."
       },
-      "defaultValue": "shared_scripts/ubuntu"
+      "defaultValue": "shared_scripts/ubuntu/"
     },
     "_artifactsNextflowFolder": {
       "type": "string",
       "metadata": {
         "description": "*Advanced* This should be left as default unless you are an advanced user. The folder in the artifacts location were nextflow scripts are stored."
       },
-      "defaultValue": "nextflow-genomics-cluster-ubuntu/scripts"
+      "defaultValue": "nextflow-genomics-cluster-ubuntu/scripts/"
     },
     "authenticationType": {
       "type": "string",
